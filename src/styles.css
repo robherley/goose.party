@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Space Mono', monospace;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	background-image: url('/assets/bg.png');
+	background-repeat: repeat;
+	cursor: url('/assets/crosshair.png') 32 32, auto;
+}
+
+button {
+	font-size: 2rem;
+	background-color: transparent;
+	outline: none;
+	border: 4px solid white;
+	color: white;
+	font-family: 'Space Mono', monospace;
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+
+h1 {
+	position: fixed;
+	z-index: 99;
+	color: white;
+	top: 1rem;
+	left: 2rem;
+	font-size: 3.5rem;
+	pointer-events: none;
+	user-select: none;
+}
+
+h2 {
+	position: fixed;
+	z-index: 99;
+	color: white;
+	top: 5.5rem;
+	left: 2rem;
+	font-size: 2rem;
+	pointer-events: none;
+	user-select: none;
+}
+
+h3 {
+	z-index: 99;
+	font-size: 3rem;
+	color: lime;
+}
+
+#hunter {
+	height: 70vh;
+	user-select: none;
+	display: none;
+	align-self: flex-end;
+}
+
+#message {
+	position: fixed;
+	color: red;
+	top: 47vh;
+	text-align: center;
+}
+
+#dialog {
+	color: white;
+	text-align: center;
+}
+
+.geese {
+	user-select: none;
+	position: fixed;
+	height: 120px;
+	width: 102px;
+}
